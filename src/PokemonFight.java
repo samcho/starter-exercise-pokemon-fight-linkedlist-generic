@@ -43,7 +43,7 @@ public class PokemonFight {
             String[] parts = line.split(",");
             Pokemon mon = new Pokemon(Integer.parseInt(parts[0]), parts[1], parts[2], parts[3], Integer.parseInt(parts[4]), Integer.parseInt(parts[5]), Integer.parseInt(parts[6]), Integer.parseInt(parts[7]), Integer.parseInt(parts[8]), Integer.parseInt(parts[9]), Integer.parseInt(parts[10]), Integer.parseInt(parts[11]), Boolean.parseBoolean(parts[12]));
             PokeDex.insert(mon);
-            //System.out.println(poke); // for debugging
+            //System.out.println(mon); // for debugging
         }
         inputFileNameStream.close(); // because I care
 
